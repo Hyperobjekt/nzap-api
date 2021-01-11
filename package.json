@@ -1,0 +1,19 @@
+{
+  "name": "nzap-api",
+  "version": "1.0.0",
+  "description": "The API to serve scenarios data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urimaxi/nzap-api.git"
+  },
+  "author": "Uri Maxima for HyperObjekt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/urimaxi/nzap-api/issues"
+  },
+  "homepage": "https://github.com/urimaxi/nzap-api#readme"
+}
