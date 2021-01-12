@@ -4,16 +4,32 @@
   "description": "The API to serve scenarios data",
   "main": "index.js",
   "scripts": {
+    "start": "node server",
+    "start:dev": "./start",
+    "auth": "gcloud auth login && firebase logout && firebase login",
+    "deploy": "npm run deploy:staging && npm run deploy:production",
+    "deploy:staging": "",
+    "deploy:production": "",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/urimaxi/nzap-api.git"
   },
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment-timezone": "^0.5.32",
+    "mongodb": "^3.6.3",
+    "pluralize": "^8.0.0",
+    "serve-favicon": "^2.5.0"
+  },
   "author": "Uri Maxima for HyperObjekt",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/urimaxi/nzap-api/issues"
   },
-  "homepage": "https://github.com/urimaxi/nzap-api#readme"
+  "homepage": "https://github.com/urimaxi/nzap-api#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }

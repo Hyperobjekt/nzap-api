@@ -1,0 +1,7 @@
+runtime: nodejs12
+
+env_variables:
+  MODE: "PRODUCTION"
+  TZ: "America/New_York"
+  API_VERSION: "v1"
+  MONGO_URL: "mongodb+srv://apiary:9RGt4ep3EkdrZw6hHsZaRZ4H@cluster0.dmbin.mongodb.net/kaperu?authSource=admin&replicaSet=atlas-6a7liv-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=false&ssl=true"
