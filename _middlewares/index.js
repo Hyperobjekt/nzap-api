@@ -6,5 +6,6 @@ module.exports = {
     protect: require('./protect'),
     read: require('./read'),
     setQuery: require('./set-query'),
+    setPagination: require('./set-pagination'),
     update: require('./update'),
 }

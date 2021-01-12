@@ -2,7 +2,7 @@ module.exports = (req, res, next) => {
   const read = require('../_lib/ccrud/read');
   let db = req.app.get('db');
   let collection = req.baseUrl.split('/')[2];
-  read(db, req.schemas[collection], collection, req.locals.query, 0, 20, null, req.body.expand)
+  read(db, req.schemas[collection], collection, req.locals.query, req.locals.skip, req.locals.limit, null, req.body.expand)
     .then(response => {
       let paramKeys = Object.keys(req.params);
       paramKeys.length === 1 && paramKeys[0] === '_id'
