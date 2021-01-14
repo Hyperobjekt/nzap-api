@@ -4,7 +4,7 @@
   "description": "The API to serve scenarios data",
   "main": "index.js",
   "scripts": {
-    "start": "npm start",
+    "start": "node .",
     "dev": "./start",
     "test": "mocha --timeout 10000 ./test/**/*.spec.js --exit"
   },

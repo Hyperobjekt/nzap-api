@@ -5,14 +5,14 @@ module.exports = (req, res) => {
 
   switch (req.method) {
     case 'GET':
-      return !res.locals[collection].length
-        ? res.status(404).send({ message: `no ${collection} found`, query: req.locals.query })
-        : res.status(200).send(res.locals[collection])
+      return (res.locals[collection].count || res.locals[collection].length)
+        ? res.status(200).send(res.locals[collection])
+        : res.status(404).send({ message: `no ${collection} found`, query: req.locals.query })
 
     case 'POST':
-      return !res.locals[collection].length
-        ? res.status(404).send({ message: `no ${collection} found`, query: req.locals.query })
-        : res.status(200).send(res.locals[collection])
+      return (res.locals[collection].count || res.locals[collection].length)
+        ? res.status(200).send(res.locals[collection])
+        : res.status(404).send({ message: `no ${collection} found`, query: req.locals.query })
 
     default:
       break;

@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const _m = require('../../_middlewares');
 
-router.get('/', _m.setQuery, _m.setPagination, _m.read, _m.done);
-router.post('/', _m.setQuery, _m.setPagination, _m.read, _m.done);
+router.get('/', _m.setQuery, _m.setPagination, _m.read, _m.count, _m.done);
+router.post('/', _m.setQuery, _m.setPagination, _m.read, _m.count, _m.done);
 router.get('/count', _m.setQuery, _m.count, _m.done);
 router.get('/:_id', _m.setQuery, _m.read, _m.done);
 router.post('/create', _m.protect, _m.create, _m.done);
