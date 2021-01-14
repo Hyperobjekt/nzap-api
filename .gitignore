@@ -19,6 +19,7 @@
 .DS_Store
 *.pem
 start
+app.yaml
 
 # debug
 npm-debug.log*
