@@ -4,7 +4,8 @@
   "description": "The API to serve scenarios data",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index",
+    "start": "npm start",
+    "dev": "./start",
     "test": "mocha --timeout 10000 ./test/**/*.spec.js --exit"
   },
   "repository": {

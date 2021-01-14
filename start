@@ -1,8 +1,0 @@
-MODE=DEVELOPMENT \
-TZ="America/New_York" \
-API_VERSION=v1 \
-MONGO_URL="mongodb+srv://nzapSite:BoPXBsxWFyKawXDo@nzap-v1.swvyf.mongodb.net/nzap?retryWrites=true&w=majority" \
-nodemon server
-
-
-
