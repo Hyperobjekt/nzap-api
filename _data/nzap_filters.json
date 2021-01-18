@@ -1,0 +1,502 @@
+{
+  "usStates": [
+    {
+      "label": "National",
+      "slug": "national"
+    },
+    {
+      "label": "Alabama",
+      "slug": "alabama"
+    },
+    {
+      "label": "Arizona",
+      "slug": "arizona"
+    },
+    {
+      "label": "Arkansas",
+      "slug": "arkansas"
+    },
+    {
+      "label": "California",
+      "slug": "california"
+    },
+    {
+      "label": "Colorado",
+      "slug": "colorado"
+    },
+    {
+      "label": "Connecticut",
+      "slug": "connecticut"
+    },
+    {
+      "label": "Delaware",
+      "slug": "delaware"
+    },
+    {
+      "label": "District Of Columbia",
+      "slug": "district-of-columbia"
+    },
+    {
+      "label": "Florida",
+      "slug": "florida"
+    },
+    {
+      "label": "Georgia",
+      "slug": "georgia"
+    },
+    {
+      "label": "Idaho",
+      "slug": "idaho"
+    },
+    {
+      "label": "Illinois",
+      "slug": "illinois"
+    },
+    {
+      "label": "Indiana",
+      "slug": "indiana"
+    },
+    {
+      "label": "Iowa",
+      "slug": "iowa"
+    },
+    {
+      "label": "Kansas",
+      "slug": "kansas"
+    },
+    {
+      "label": "Kentucky",
+      "slug": "kentucky"
+    },
+    {
+      "label": "Louisiana",
+      "slug": "louisiana"
+    },
+    {
+      "label": "Maine",
+      "slug": "maine"
+    },
+    {
+      "label": "Maryland",
+      "slug": "maryland"
+    },
+    {
+      "label": "Massachusetts",
+      "slug": "massachusetts"
+    },
+    {
+      "label": "Michigan",
+      "slug": "michigan"
+    },
+    {
+      "label": "Minnesota",
+      "slug": "minnesota"
+    },
+    {
+      "label": "Mississippi",
+      "slug": "mississippi"
+    },
+    {
+      "label": "Missouri",
+      "slug": "missouri"
+    },
+    {
+      "label": "Montana",
+      "slug": "montana"
+    },
+    {
+      "label": "Nebraska",
+      "slug": "nebraska"
+    },
+    {
+      "label": "Nevada",
+      "slug": "nevada"
+    },
+    {
+      "label": "New Hampshire",
+      "slug": "new-hampshire"
+    },
+    {
+      "label": "New Jersey",
+      "slug": "new-jersey"
+    },
+    {
+      "label": "New Mexico",
+      "slug": "new-mexico"
+    },
+    {
+      "label": "New York",
+      "slug": "new-york"
+    },
+    {
+      "label": "North Carolina",
+      "slug": "north-carolina"
+    },
+    {
+      "label": "North Dakota",
+      "slug": "north-dakota"
+    },
+    {
+      "label": "Ohio",
+      "slug": "ohio"
+    },
+    {
+      "label": "Oklahoma",
+      "slug": "oklahoma"
+    },
+    {
+      "label": "Oregon",
+      "slug": "oregon"
+    },
+    {
+      "label": "Pennsylvania",
+      "slug": "pennsylvania"
+    },
+    {
+      "label": "Rhode Island",
+      "slug": "rhode-island"
+    },
+    {
+      "label": "South Carolina",
+      "slug": "south-carolina"
+    },
+    {
+      "label": "South Dakota",
+      "slug": "south-dakota"
+    },
+    {
+      "label": "Tennessee",
+      "slug": "tennessee"
+    },
+    {
+      "label": "Texas",
+      "slug": "texas"
+    },
+    {
+      "label": "Utah",
+      "slug": "utah"
+    },
+    {
+      "label": "Vermont",
+      "slug": "vermont"
+    },
+    {
+      "label": "Virginia",
+      "slug": "virginia"
+    },
+    {
+      "label": "Washington",
+      "slug": "washington"
+    },
+    {
+      "label": "West Virginia",
+      "slug": "west-virginia"
+    },
+    {
+      "label": "Wisconsin",
+      "slug": "wisconsin"
+    },
+    {
+      "label": "Wyoming",
+      "slug": "wyoming"
+    }
+  ],
+  "years": [
+    {
+      "label": "2020",
+      "slug": "2020"
+    },
+    {
+      "label": "2025",
+      "slug": "2025"
+    },
+    {
+      "label": "2030",
+      "slug": "2030"
+    },
+    {
+      "label": "2035",
+      "slug": "2035"
+    },
+    {
+      "label": "2040",
+      "slug": "2040"
+    },
+    {
+      "label": "2045",
+      "slug": "2045"
+    },
+    {
+      "label": "2050",
+      "slug": "2050"
+    },
+    {
+      "label": "2021",
+      "slug": "2021"
+    },
+    {
+      "label": "…2050",
+      "slug": "2050"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "REF",
+      "slug": "ref"
+    },
+    {
+      "label": "E+",
+      "slug": "e-positive"
+    },
+    {
+      "label": "E-",
+      "slug": "e-negative"
+    },
+    {
+      "label": "E-B+",
+      "slug": "e-b-positive"
+    },
+    {
+      "label": "E+RE-",
+      "slug": "ere-negative"
+    },
+    {
+      "label": "E+RE+",
+      "slug": "ere-positive"
+    },
+    {
+      "label": "RE+",
+      "slug": "re-positive"
+    },
+    {
+      "label": "RE-",
+      "slug": "re-negative"
+    },
+    {
+      "label": "B+",
+      "slug": "b-positive"
+    },
+    {
+      "label": "yes",
+      "slug": "yes"
+    },
+    {
+      "label": "low",
+      "slug": "low"
+    },
+    {
+      "label": "high",
+      "slug": "high"
+    },
+    {
+      "label": "NA",
+      "slug": ""
+    }
+  ],
+  "levelOneFilters": [
+    {
+      "label": "MACRO LEVEL",
+      "slug": "macro-level",
+      "levelTwoFilters": [
+        {
+          "label": "CO2 emissions",
+          "slug": "co2-emissions"
+        },
+        {
+          "label": "Primary energy",
+          "slug": "primary-energy"
+        },
+        {
+          "label": "System costs",
+          "slug": "system-costs"
+        },
+        {
+          "label": "Marginal prices",
+          "slug": "marginal-prices"
+        },
+        {
+          "label": "Fuel mix by source",
+          "slug": "fuel-mix-by-source"
+        }
+      ]
+    },
+    {
+      "label": "PILLAR 1: End-use energy productivity",
+      "slug": "pillar-1-end-use-energy-productivity",
+      "levelTwoFilters": [
+        {
+          "label": "Overview",
+          "slug": "overview"
+        },
+        {
+          "label": "Commercial",
+          "slug": "commercial"
+        },
+        {
+          "label": "Electricity demand",
+          "slug": "electricity-demand"
+        },
+        {
+          "label": "Industrial",
+          "slug": "industrial"
+        },
+        {
+          "label": "Residential",
+          "slug": "residential"
+        },
+        {
+          "label": "Transportation ",
+          "slug": "transportation"
+        }
+      ]
+    },
+    {
+      "label": "PILLAR 2: Clean Electricity",
+      "slug": "pillar-2-clean-electricity",
+      "levelTwoFilters": [
+        {
+          "label": "Electricity generating capacity",
+          "slug": "electricity-generating-capacity"
+        },
+        {
+          "label": "Capacity factors",
+          "slug": "capacity-factors"
+        },
+        {
+          "label": "Electricity generation",
+          "slug": "electricity-generation"
+        },
+        {
+          "label": "Electricity supply system",
+          "slug": "electricity-supply-system"
+        },
+        {
+          "label": "Transmission",
+          "slug": "transmission"
+        }
+      ]
+    },
+    {
+      "label": "PILLAR 3: Bioenergy and Hydrogen",
+      "slug": "pillar-3-bioenergy-and-hydrogen",
+      "levelTwoFilters": [
+        {
+          "label": "Bioconversion capacities",
+          "slug": "bioconversion-capacities"
+        },
+        {
+          "label": "Bioconversion other",
+          "slug": "bioconversion-other"
+        },
+        {
+          "label": "Bioconversion outputs",
+          "slug": "bioconversion-outputs"
+        },
+        {
+          "label": "Biomass used",
+          "slug": "biomass-used"
+        },
+        {
+          "label": "H2 capacity",
+          "slug": "h2-capacity"
+        },
+        {
+          "label": "H2 production",
+          "slug": "h2-production"
+        },
+        {
+          "label": "H2 use",
+          "slug": "h2-use"
+        },
+        {
+          "label": "Bioconversion capacity factors",
+          "slug": "bioconversion-capacity-factors"
+        },
+        {
+          "label": "H2 capacity factors",
+          "slug": "h2-capacity-factors"
+        }
+      ]
+    },
+    {
+      "label": "IMPACTS",
+      "slug": "impacts",
+      "levelTwoFilters": [
+        {
+          "label": "Health",
+          "slug": "health"
+        },
+        {
+          "label": "Energy-related employment",
+          "slug": "energy-related-employment"
+        },
+        {
+          "label": "Fossil fuel industries",
+          "slug": "fossil-fuel-industries"
+        },
+        {
+          "label": "Land use",
+          "slug": "land-use"
+        },
+        {
+          "label": "Capital Investments",
+          "slug": "capital-investments"
+        }
+      ]
+    },
+    {
+      "label": "PILLAR 4: CO2 capture, utilization, and storage",
+      "slug": "pillar-4-co2-capture-utilization-and-storage",
+      "levelTwoFilters": [
+        {
+          "label": "CO2 capture",
+          "slug": "co2-capture"
+        },
+        {
+          "label": "CO2 capture capacity",
+          "slug": "co2-capture-capacity"
+        },
+        {
+          "label": "CO2 capture capacity factors",
+          "slug": "co2-capture-capacity-factors"
+        },
+        {
+          "label": "CO2 storage",
+          "slug": "co2-storage"
+        },
+        {
+          "label": "CO2 transportation",
+          "slug": "co2-transportation"
+        },
+        {
+          "label": "CO2 use",
+          "slug": "co2-use"
+        }
+      ]
+    },
+    {
+      "label": "PILLAR 5: Non-CO2 emissions",
+      "slug": "pillar-5-non-co2-emissions",
+      "levelTwoFilters": [
+        {
+          "label": "NA",
+          "slug": ""
+        }
+      ]
+    },
+    {
+      "label": "PILLAR 6: Land carbon sinks",
+      "slug": "pillar-6-land-carbon-sinks",
+      "levelTwoFilters": [
+        {
+          "label": "Agricultural",
+          "slug": "agricultural"
+        },
+        {
+          "label": "Forestry",
+          "slug": "forestry"
+        }
+      ]
+    }
+  ]
+}

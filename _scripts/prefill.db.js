@@ -1,14 +1,4 @@
-let now = new Date();
+#!/usr/bin/mongo --quiet
 
-let amenities = [
-    { icon: '', label: 'Dish Washer' },
-    { icon: '', label: 'Washer' },
-    { icon: '', label: 'Dryer' },
-    { icon: '', label: 'Doorman' }
-].map(e => {
-    e.tags = ['stock'];
-    e.created = now;
-    return e;
-})
-
-db.amenities.insertMany(amenities)
+load('./_data/nzap_data.js')
+db.scenarios.insertMany(scenarios)
