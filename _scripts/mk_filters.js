@@ -45,7 +45,7 @@ const processData = dataString => {
   }
   output.levelOneFilters = tempLevelOneFilters.map(e => { return { label: e, slug: slugify(e) } });
   output.usStates = output.usStates.map(e => ({ label: e, slug: slugify(e) }))
-  output.years = output.years.map(e => ({ label: e, slug: slugify(e) }))
+  output.years = output.years.map(e => ({ label: e.replace(/\D/g, ''), slug: slugify(e) }))
   output.scenarios = output.scenarios.map(e => ({ label: e, slug: slugify(e) }))
   return extractLevelTwoFilters(output, data)
 }
