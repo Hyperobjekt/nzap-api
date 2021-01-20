@@ -38,14 +38,15 @@ const processData = dataString => {
   let data = JSON.parse(dataString);
   for (let i = 0; i < data.length; i++) {
     let state = capitalize(data[i].geo)
+    let year = data[i].year.replace(/\D/g, '')
     if (output.usStates.indexOf(state) === -1) output.usStates.push(state);
-    if (output.years.indexOf(data[i].year) === -1) output.years.push(data[i].year)
+    if (output.years.indexOf(year) === -1) output.years.push(year)
     if (output.scenarios.indexOf(data[i].scenario) === -1) output.scenarios.push(data[i].scenario)
     if (tempLevelOneFilters.indexOf(data[i].filter_level_1) === -1) tempLevelOneFilters.push(data[i].filter_level_1);
   }
   output.levelOneFilters = tempLevelOneFilters.map(e => { return { label: e, slug: slugify(e) } });
   output.usStates = output.usStates.map(e => ({ label: e, slug: slugify(e) }))
-  output.years = output.years.map(e => ({ label: e.replace(/\D/g, ''), slug: slugify(e) }))
+  output.years = output.years.map(e => ({ label: e, slug: slugify(e) }))
   output.scenarios = output.scenarios.map(e => ({ label: e, slug: slugify(e) }))
   return extractLevelTwoFilters(output, data)
 }
