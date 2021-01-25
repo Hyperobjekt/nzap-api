@@ -42,7 +42,7 @@ const useRoutes = (service, routes) => {
 
 fs.readdirSync(`./services`)
   .forEach(service => {
-    if (service === 'scenarios') useRoutes(service, fs.readdirSync(`./services/${service}`))
+    useRoutes(service, fs.readdirSync(`./services/${service}`))
   })
 
 // catch 404 and forward to error handler

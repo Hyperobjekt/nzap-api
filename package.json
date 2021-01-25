@@ -6,7 +6,18 @@
   "scripts": {
     "start": "node .",
     "dev": "./start",
-    "test": "mocha --timeout 10000 ./test/**/*.spec.js --exit"
+    "test": "mocha --timeout 10000 ./test/**/*.spec.js --exit",
+    "deploy": "gcloud config set project net-zero-america && gcloud app deploy --quiet",
+    "predata:mk_json": "rimraf ./_data/nzap_data.json ./_data/nzap_data.js ./_data/nzap_filters.json",
+    "data:mk_json": "node _scripts/mk_json _data/nzap_data.csv",
+    "postdata:mk_json": "npm run data:mk_filters",
+    "data:mk_filters": "node _scripts/mk_filters _data/nzap_data.json",
+    "postdata:mk_filters": "npm run data:mk_loadable",
+    "data:mk_loadable": "node _scripts/mk_loadable",
+    "postdata:mk_loadable": "npm run db:clean",
+    "db:clean": "./_scripts/_clean",
+    "postdb:clean": "npm run db:prefill",
+    "db:prefill": "./_scripts/_prefill"
   },
   "repository": {
     "type": "git",
@@ -36,8 +47,10 @@
     "chai": "^4.2.0",
     "dreamjs": "^0.2.0",
     "mocha": "^8.2.1",
+    "neat-csv": "^6.0.1",
     "node-mocks-http": "^1.9.0",
     "nodemon": "^2.0.6",
+    "rimraf": "^3.0.2",
     "supertest": "^6.0.1"
   }
 }

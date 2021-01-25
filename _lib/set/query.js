@@ -58,7 +58,9 @@ module.exports = req => {
   let hasQuery = !isEmpty(req.query);
 
   let schema = req.schemas[req.baseUrl.split('/')[2]];
-  let requestFilter = hasParams || hasQuery ? { ...req.params, ...req.query } : { ...req.params, ...req.query, ...req.body };
+  // let requestFilter = hasParams || hasQuery ? { ...req.params, ...req.query } : { ...req.params, ...req.query, ...req.body };
+  let requestFilter = { ...req.params, ...req.query, ...req.body }
+  // console.log(requestFilter)
   let query = typeCastQuery(schema, Object.assign({}, requestFilter))
 
   if (!req.locals) req.locals = {}
