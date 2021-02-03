@@ -3,7 +3,7 @@ module.exports = (req, res, next) => {
   let db = req.app.get('db');
   let collection = req.baseUrl.split('/')[2];
 
-  read(db, req.schemas[collection], collection, req.locals.query, req.locals.skip || 0, req.locals.limit || 200, null, req.body.expand)
+  read(db, req.schemas[collection], collection, req.locals.query, req.locals.skip || 0, req.locals.limit || 200, { id: 1 }, req.body.expand)
     .then(response => {
       let paramKeys = Object.keys(req.params);
       paramKeys.length === 1 && paramKeys[0] === '_id'
