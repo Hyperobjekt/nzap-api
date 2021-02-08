@@ -233,6 +233,14 @@
   ],
   "scenarios": [
     {
+      "label": "E-B+",
+      "slug": "e-b-positive"
+    },
+    {
+      "label": "E+RE+",
+      "slug": "ere-positive"
+    },
+    {
       "label": "REF",
       "slug": "ref"
     },
@@ -245,16 +253,8 @@
       "slug": "e-negative"
     },
     {
-      "label": "RE-",
-      "slug": "re-negative"
-    },
-    {
-      "label": "B+",
-      "slug": "b-positive"
-    },
-    {
-      "label": "RE+",
-      "slug": "re-positive"
+      "label": "E+RE-",
+      "slug": "ere-negative"
     }
   ],
   "levelOneFilters": [
@@ -387,20 +387,12 @@
           "slug": "co2-capture"
         },
         {
-          "label": "CO2 capture capacity",
-          "slug": "co2-capture-capacity"
-        },
-        {
-          "label": "CO2 capture capacity factors",
-          "slug": "co2-capture-capacity-factors"
-        },
-        {
           "label": "CO2 storage",
           "slug": "co2-storage"
         },
         {
-          "label": "CO2 transportation",
-          "slug": "co2-transportation"
+          "label": "CO2 pipelines",
+          "slug": "co2-pipelines"
         },
         {
           "label": "CO2 use",
@@ -459,6 +451,16 @@
         {
           "label": "Total assumed land sink",
           "slug": "total-assumed-land-sink"
+        }
+      ]
+    },
+    {
+      "label": "NA",
+      "slug": "",
+      "levelTwoFilters": [
+        {
+          "label": "NA",
+          "slug": ""
         }
       ]
     }
