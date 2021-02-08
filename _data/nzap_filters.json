@@ -229,10 +229,6 @@
     {
       "label": "2050",
       "slug": "2050"
-    },
-    {
-      "label": "2021",
-      "slug": "2021"
     }
   ],
   "scenarios": [
@@ -249,22 +245,6 @@
       "slug": "e-negative"
     },
     {
-      "label": "E-B+",
-      "slug": "e-b-positive"
-    },
-    {
-      "label": "E+RE-",
-      "slug": "ere-negative"
-    },
-    {
-      "label": "E+RE+",
-      "slug": "ere-positive"
-    },
-    {
-      "label": "RE+",
-      "slug": "re-positive"
-    },
-    {
       "label": "RE-",
       "slug": "re-negative"
     },
@@ -273,30 +253,34 @@
       "slug": "b-positive"
     },
     {
-      "label": "yes",
-      "slug": "yes"
-    },
-    {
-      "label": "low",
-      "slug": "low"
-    },
-    {
-      "label": "high",
-      "slug": "high"
-    },
-    {
-      "label": "NA",
-      "slug": ""
+      "label": "RE+",
+      "slug": "re-positive"
     }
   ],
   "levelOneFilters": [
     {
-      "label": "MACRO LEVEL",
-      "slug": "macro-level",
+      "label": "MACRO RESULTS",
+      "slug": "macro-results",
       "levelTwoFilters": [
         {
           "label": "CO2 emissions",
           "slug": "co2-emissions"
+        },
+        {
+          "label": "Liquid fuels",
+          "slug": "liquid-fuels"
+        },
+        {
+          "label": "Pipeline gas",
+          "slug": "pipeline-gas"
+        },
+        {
+          "label": "Industrial feedstocks",
+          "slug": "industrial-feedstocks"
+        },
+        {
+          "label": "Hydrogen",
+          "slug": "hydrogen"
         },
         {
           "label": "Primary energy",
@@ -309,17 +293,21 @@
         {
           "label": "Marginal prices",
           "slug": "marginal-prices"
-        },
-        {
-          "label": "Fuel mix by source",
-          "slug": "fuel-mix-by-source"
         }
       ]
     },
     {
-      "label": "PILLAR 1: End-use energy productivity",
-      "slug": "pillar-1-end-use-energy-productivity",
+      "label": "PILLAR 1: Efficiency/Electrification",
+      "slug": "pillar-1-efficiencyelectrification",
       "levelTwoFilters": [
+        {
+          "label": "Residential",
+          "slug": "residential"
+        },
+        {
+          "label": "Transportation ",
+          "slug": "transportation"
+        },
         {
           "label": "Overview",
           "slug": "overview"
@@ -335,14 +323,6 @@
         {
           "label": "Industrial",
           "slug": "industrial"
-        },
-        {
-          "label": "Residential",
-          "slug": "residential"
-        },
-        {
-          "label": "Transportation ",
-          "slug": "transportation"
         }
       ]
     },
@@ -351,98 +331,56 @@
       "slug": "pillar-2-clean-electricity",
       "levelTwoFilters": [
         {
-          "label": "Electricity generating capacity",
-          "slug": "electricity-generating-capacity"
+          "label": "Generating capacity",
+          "slug": "generating-capacity"
+        },
+        {
+          "label": "Generation (EER model)",
+          "slug": "generation-eer-model"
+        },
+        {
+          "label": "Generation (downscaled)",
+          "slug": "generation-downscaled"
+        },
+        {
+          "label": "Transmission",
+          "slug": "transmission"
         },
         {
           "label": "Capacity factors",
           "slug": "capacity-factors"
         },
         {
-          "label": "Electricity generation",
-          "slug": "electricity-generation"
-        },
-        {
-          "label": "Electricity supply system",
-          "slug": "electricity-supply-system"
-        },
-        {
-          "label": "Transmission",
-          "slug": "transmission"
-        }
-      ]
-    },
-    {
-      "label": "PILLAR 3: Bioenergy and Hydrogen",
-      "slug": "pillar-3-bioenergy-and-hydrogen",
-      "levelTwoFilters": [
-        {
-          "label": "Bioconversion capacities",
-          "slug": "bioconversion-capacities"
-        },
-        {
-          "label": "Bioconversion other",
-          "slug": "bioconversion-other"
-        },
-        {
-          "label": "Bioconversion outputs",
-          "slug": "bioconversion-outputs"
-        },
-        {
-          "label": "Biomass used",
-          "slug": "biomass-used"
-        },
-        {
-          "label": "H2 capacity",
-          "slug": "h2-capacity"
-        },
-        {
-          "label": "H2 production",
-          "slug": "h2-production"
-        },
-        {
-          "label": "H2 use",
-          "slug": "h2-use"
-        },
-        {
-          "label": "Bioconversion capacity factors",
-          "slug": "bioconversion-capacity-factors"
-        },
-        {
-          "label": "H2 capacity factors",
-          "slug": "h2-capacity-factors"
-        }
-      ]
-    },
-    {
-      "label": "IMPACTS",
-      "slug": "impacts",
-      "levelTwoFilters": [
-        {
-          "label": "Health",
-          "slug": "health"
-        },
-        {
-          "label": "Energy-related employment",
-          "slug": "energy-related-employment"
-        },
-        {
-          "label": "Fossil fuel industries",
-          "slug": "fossil-fuel-industries"
-        },
-        {
           "label": "Land use",
           "slug": "land-use"
         },
         {
-          "label": "Capital Investments",
-          "slug": "capital-investments"
+          "label": "Solar and wind mfg capacity",
+          "slug": "solar-and-wind-mfg-capacity"
+        },
+        {
+          "label": "Generation (EER downscaled)",
+          "slug": "generation-eer-downscaled"
         }
       ]
     },
     {
-      "label": "PILLAR 4: CO2 capture, utilization, and storage",
-      "slug": "pillar-4-co2-capture-utilization-and-storage",
+      "label": "PILLAR 3: Clean fuels",
+      "slug": "pillar-3-clean-fuels",
+      "levelTwoFilters": [
+        {
+          "label": "Bioenergy",
+          "slug": "bioenergy"
+        },
+        {
+          "label": "Hydrogen",
+          "slug": "hydrogen"
+        }
+      ]
+    },
+    {
+      "label": "PILLAR 4: CCUS",
+      "slug": "pillar-4-ccus",
       "levelTwoFilters": [
         {
           "label": "CO2 capture",
@@ -481,16 +419,46 @@
       ]
     },
     {
-      "label": "PILLAR 6: Land carbon sinks",
-      "slug": "pillar-6-land-carbon-sinks",
+      "label": "IMPACTS",
+      "slug": "impacts",
       "levelTwoFilters": [
         {
-          "label": "Agricultural",
-          "slug": "agricultural"
+          "label": "Jobs",
+          "slug": "jobs"
         },
         {
-          "label": "Forestry",
-          "slug": "forestry"
+          "label": "Capital Investments",
+          "slug": "capital-investments"
+        },
+        {
+          "label": "Fossil fuel industries",
+          "slug": "fossil-fuel-industries"
+        },
+        {
+          "label": "Land use",
+          "slug": "land-use"
+        },
+        {
+          "label": "Health",
+          "slug": "health"
+        }
+      ]
+    },
+    {
+      "label": "PILLAR 6: Land sinks",
+      "slug": "pillar-6-land-sinks",
+      "levelTwoFilters": [
+        {
+          "label": "Agriculture",
+          "slug": "agriculture"
+        },
+        {
+          "label": "Forests",
+          "slug": "forests"
+        },
+        {
+          "label": "Total assumed land sink",
+          "slug": "total-assumed-land-sink"
         }
       ]
     }
