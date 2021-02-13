@@ -233,14 +233,6 @@
   ],
   "scenarios": [
     {
-      "label": "E-B+",
-      "slug": "e-b-positive"
-    },
-    {
-      "label": "E+RE+",
-      "slug": "ere-positive"
-    },
-    {
       "label": "REF",
       "slug": "ref"
     },
@@ -255,6 +247,14 @@
     {
       "label": "E+RE-",
       "slug": "ere-negative"
+    },
+    {
+      "label": "E-B+",
+      "slug": "e-b-positive"
+    },
+    {
+      "label": "E+RE+",
+      "slug": "ere-positive"
     }
   ],
   "levelOneFilters": [
@@ -379,6 +379,32 @@
       ]
     },
     {
+      "label": "IMPACTS",
+      "slug": "impacts",
+      "levelTwoFilters": [
+        {
+          "label": "Health",
+          "slug": "health"
+        },
+        {
+          "label": "Jobs",
+          "slug": "jobs"
+        },
+        {
+          "label": "Capital Investments",
+          "slug": "capital-investments"
+        },
+        {
+          "label": "Fossil fuel industries",
+          "slug": "fossil-fuel-industries"
+        },
+        {
+          "label": "Land use",
+          "slug": "land-use"
+        }
+      ]
+    },
+    {
       "label": "PILLAR 4: CCUS",
       "slug": "pillar-4-ccus",
       "levelTwoFilters": [
@@ -411,32 +437,6 @@
       ]
     },
     {
-      "label": "IMPACTS",
-      "slug": "impacts",
-      "levelTwoFilters": [
-        {
-          "label": "Jobs",
-          "slug": "jobs"
-        },
-        {
-          "label": "Capital Investments",
-          "slug": "capital-investments"
-        },
-        {
-          "label": "Fossil fuel industries",
-          "slug": "fossil-fuel-industries"
-        },
-        {
-          "label": "Land use",
-          "slug": "land-use"
-        },
-        {
-          "label": "Health",
-          "slug": "health"
-        }
-      ]
-    },
-    {
       "label": "PILLAR 6: Land sinks",
       "slug": "pillar-6-land-sinks",
       "levelTwoFilters": [
@@ -451,16 +451,6 @@
         {
           "label": "Total assumed land sink",
           "slug": "total-assumed-land-sink"
-        }
-      ]
-    },
-    {
-      "label": "NA",
-      "slug": "",
-      "levelTwoFilters": [
-        {
-          "label": "NA",
-          "slug": ""
         }
       ]
     }
