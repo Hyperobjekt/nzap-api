@@ -8,7 +8,7 @@
     "dev": "./start",
     "test": "mocha --timeout 10000 ./test/**/*.spec.js --exit",
     "deploy": "gcloud config set project net-zero-america && gcloud app deploy --quiet",
-    "data:mk_json": "node _scripts/mk_json _data/nzap_data.csv",
+    "data:mk_json": "node --max-old-space-size=8192 _scripts/mk_json _data/nzap_data.csv",
     "predata:mk_json": "rimraf ./_data/nzap_data.json ./_data/nzap_data.js ./_data/nzap_filters.json",
     "postdata:mk_json": "npm run data:mk_filters",
     "data:mk_filters": "node _scripts/mk_filters _data/nzap_data.json",
