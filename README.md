@@ -12,7 +12,7 @@ First download the new databall (CSV) to the `/_data/` folder and rename it `nza
 # Navigate to the scripts folder
 cd _scripts
 
-# Replace $username & $BoPXBsxWFyKawXDo
+# Replace $username & $password
 echo "mongo mongodb+srv://nzap-v1.swvyf.mongodb.net/nzap --username $username --password $password ./_scripts/clean.db.js" > _clean
 echo "mongo mongodb+srv://nzap-v1.swvyf.mongodb.net/nzap --username $username --password $password ./_scripts/prefill.db.js" > _prefill
 
