@@ -2,28 +2,23 @@
 
 ## Running Locally
 
-Create a `.env` file in the root of the project with the following config
+In the root of the project set up environment variables.
+
+Do:
 
 ``` bash
-echo "API_VERSION=v1\n
-PORT=5000\n
-MONGO_URL=$mongoDB\n
-TZ=America/New_York\n
-JWT_SECRET=" > .env
+echo "API_VERSION=v1\nPORT=5000\nMONGO_URL=$mongoDB\nTZ=America/New_York\nJWT_SECRET=" > .env
 ```
 
-Replace `$mongoDB` with `mongodb+srv://$username:$password@nzap-v1.swvyf.mongodb.net/nzap?retryWrites=true&w=majority`
+⚠️ Replace `$mongoDB` with `mongodb+srv://$username:$password@nzap-v1.swvyf.mongodb.net/nzap?retryWrites=true&w=majority`
 
-> Replace `$username` & `$password` with the appropriate values
+⚠️ Replace `$username` & `$password` with the appropriate values
 
 In the root of the project; do:
 
 ``` bash
-echo "MODE=DEVELOPMENT \n
-TZ=\"America/New_York\" \n
-API_VERSION=v1 \n
-MONGO_URL=\"mongodb://localhost:27017/nzap?readPreference=primary&appname=MongoDB%20Compass&ssl=false\" \n
-nodemon server" > start
+mongoDB="mongodb://localhost:27017/nzap?readPreference=primary&appname=MongoDB%20Compass&ssl=false";
+echo "MODE=DEVELOPMENT \nTZ=\"America/New_York\" \nAPI_VERSION=v1 \nMONGO_URL=\"$mongoDB\" \nnodemon server" > start
 ```
 
 Make executable
