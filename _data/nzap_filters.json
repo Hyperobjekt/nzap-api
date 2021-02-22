@@ -331,36 +331,28 @@
       "slug": "pillar-2-clean-electricity",
       "levelTwoFilters": [
         {
-          "label": "Generating capacity",
-          "slug": "generating-capacity"
-        },
-        {
-          "label": "Generation (EER model)",
-          "slug": "generation-eer-model"
-        },
-        {
-          "label": "Generation (downscaled)",
-          "slug": "generation-downscaled"
-        },
-        {
-          "label": "Transmission",
-          "slug": "transmission"
-        },
-        {
           "label": "Capacity factors",
           "slug": "capacity-factors"
+        },
+        {
+          "label": "Generating capacity",
+          "slug": "generating-capacity"
         },
         {
           "label": "Land use",
           "slug": "land-use"
         },
         {
-          "label": "Solar and wind mfg capacity",
-          "slug": "solar-and-wind-mfg-capacity"
+          "label": "Generation",
+          "slug": "generation"
         },
         {
-          "label": "Generation (EER downscaled)",
-          "slug": "generation-eer-downscaled"
+          "label": "Transmission",
+          "slug": "transmission"
+        },
+        {
+          "label": "Solar and wind mfg capacity",
+          "slug": "solar-and-wind-mfg-capacity"
         }
       ]
     },
@@ -391,16 +383,20 @@
           "slug": "jobs"
         },
         {
-          "label": "Capital Investments",
-          "slug": "capital-investments"
-        },
-        {
           "label": "Fossil fuel industries",
           "slug": "fossil-fuel-industries"
         },
         {
           "label": "Land use",
           "slug": "land-use"
+        },
+        {
+          "label": "Pipes & Wires",
+          "slug": "pipes-wires"
+        },
+        {
+          "label": "Capital Investments",
+          "slug": "capital-investments"
         }
       ]
     },
@@ -431,8 +427,8 @@
       "slug": "pillar-5-non-co2-emissions",
       "levelTwoFilters": [
         {
-          "label": "NA",
-          "slug": ""
+          "label": "Assumed non-CO2 emissions",
+          "slug": "assumed-non-co2-emissions"
         }
       ]
     },
