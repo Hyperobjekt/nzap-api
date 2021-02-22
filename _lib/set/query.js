@@ -66,10 +66,10 @@ module.exports = req => {
   if (!req.locals) req.locals = {}
   if (requestFilter.$and) requestFilter.$and = requestFilter.$and.map(e => formatObjectIds(e))
   if (requestFilter.$or) requestFilter.$or = requestFilter.$or.map(e => formatObjectIds(e))
-
   delete query.q;
   delete query.limit;
   delete query.skip;
+  delete query.sort;
   delete query.populate;
 
   Object.keys(query).forEach(key => {
