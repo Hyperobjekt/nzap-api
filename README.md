@@ -24,3 +24,5 @@ chmod +x _prefill
 ### Run
 
  `npm run data:mk_json`
+
+ > This might take a while - go get a cup of ☕
