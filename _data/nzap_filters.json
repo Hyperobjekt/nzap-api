@@ -260,195 +260,253 @@
   "levelOneFilters": [
     {
       "label": "MACRO RESULTS",
-      "slug": "macro-results",
-      "levelTwoFilters": [
-        {
-          "label": "CO2 emissions",
-          "slug": "co2-emissions"
-        },
-        {
-          "label": "Liquid fuels",
-          "slug": "liquid-fuels"
-        },
-        {
-          "label": "Pipeline gas",
-          "slug": "pipeline-gas"
-        },
-        {
-          "label": "Industrial feedstocks",
-          "slug": "industrial-feedstocks"
-        },
-        {
-          "label": "Hydrogen",
-          "slug": "hydrogen"
-        },
-        {
-          "label": "Primary energy",
-          "slug": "primary-energy"
-        },
-        {
-          "label": "System costs",
-          "slug": "system-costs"
-        },
-        {
-          "label": "Marginal prices",
-          "slug": "marginal-prices"
-        }
-      ]
+      "slug": "macro-results"
     },
     {
       "label": "PILLAR 1: Efficiency/Electrification",
-      "slug": "pillar-1-efficiencyelectrification",
-      "levelTwoFilters": [
-        {
-          "label": "Residential",
-          "slug": "residential"
-        },
-        {
-          "label": "Transportation ",
-          "slug": "transportation"
-        },
-        {
-          "label": "Overview",
-          "slug": "overview"
-        },
-        {
-          "label": "Commercial",
-          "slug": "commercial"
-        },
-        {
-          "label": "Electricity demand",
-          "slug": "electricity-demand"
-        },
-        {
-          "label": "Industrial",
-          "slug": "industrial"
-        }
-      ]
+      "slug": "pillar-1-efficiencyelectrification"
     },
     {
       "label": "PILLAR 2: Clean Electricity",
-      "slug": "pillar-2-clean-electricity",
-      "levelTwoFilters": [
-        {
-          "label": "Generating capacity",
-          "slug": "generating-capacity"
-        },
-        {
-          "label": "Land use",
-          "slug": "land-use"
-        },
-        {
-          "label": "Generation",
-          "slug": "generation"
-        },
-        {
-          "label": "Transmission",
-          "slug": "transmission"
-        },
-        {
-          "label": "Capacity factors",
-          "slug": "capacity-factors"
-        },
-        {
-          "label": "Solar and wind mfg capacity",
-          "slug": "solar-and-wind-mfg-capacity"
-        }
-      ]
+      "slug": "pillar-2-clean-electricity"
     },
     {
       "label": "PILLAR 3: Clean fuels",
-      "slug": "pillar-3-clean-fuels",
-      "levelTwoFilters": [
-        {
-          "label": "Bioenergy",
-          "slug": "bioenergy"
-        },
-        {
-          "label": "Hydrogen",
-          "slug": "hydrogen"
-        }
-      ]
-    },
-    {
-      "label": "IMPACTS",
-      "slug": "impacts",
-      "levelTwoFilters": [
-        {
-          "label": "Health",
-          "slug": "health"
-        },
-        {
-          "label": "Jobs",
-          "slug": "jobs"
-        },
-        {
-          "label": "Land use",
-          "slug": "land-use"
-        },
-        {
-          "label": "Fossil fuel industries",
-          "slug": "fossil-fuel-industries"
-        },
-        {
-          "label": "Pipes & Wires",
-          "slug": "pipes-wires"
-        },
-        {
-          "label": "Capital Investments",
-          "slug": "capital-investments"
-        }
-      ]
+      "slug": "pillar-3-clean-fuels"
     },
     {
       "label": "PILLAR 4: CCUS",
-      "slug": "pillar-4-ccus",
-      "levelTwoFilters": [
-        {
-          "label": "CO2 capture",
-          "slug": "co2-capture"
-        },
-        {
-          "label": "CO2 storage",
-          "slug": "co2-storage"
-        },
-        {
-          "label": "CO2 pipelines",
-          "slug": "co2-pipelines"
-        },
-        {
-          "label": "CO2 use",
-          "slug": "co2-use"
-        }
-      ]
+      "slug": "pillar-4-ccus"
     },
     {
       "label": "PILLAR 5: Non-CO2 emissions",
-      "slug": "pillar-5-non-co2-emissions",
-      "levelTwoFilters": [
-        {
-          "label": "Assumed non-CO2 emissions",
-          "slug": "assumed-non-co2-emissions"
-        }
-      ]
+      "slug": "pillar-5-non-co2-emissions"
     },
     {
       "label": "PILLAR 6: Land sinks",
-      "slug": "pillar-6-land-sinks",
-      "levelTwoFilters": [
-        {
-          "label": "Agriculture",
-          "slug": "agriculture"
-        },
-        {
-          "label": "Forests",
-          "slug": "forests"
-        },
-        {
-          "label": "Total assumed land sink",
-          "slug": "total-assumed-land-sink"
-        }
-      ]
+      "slug": "pillar-6-land-sinks"
+    },
+    {
+      "label": "IMPACTS",
+      "slug": "impacts"
+    }
+  ],
+  "levelTwoFilters": [
+    {
+      "label": "Primary energy",
+      "slug": "primary-energy",
+      "levelOneLabel": "MACRO RESULTS",
+      "levelOneSlug": "macro-results"
+    },
+    {
+      "label": "CO2 emissions",
+      "slug": "co2-emissions",
+      "levelOneLabel": "MACRO RESULTS",
+      "levelOneSlug": "macro-results"
+    },
+    {
+      "label": "System costs",
+      "slug": "system-costs",
+      "levelOneLabel": "MACRO RESULTS",
+      "levelOneSlug": "macro-results"
+    },
+    {
+      "label": "Marginal prices",
+      "slug": "marginal-prices",
+      "levelOneLabel": "MACRO RESULTS",
+      "levelOneSlug": "macro-results"
+    },
+    {
+      "label": "Liquid fuels",
+      "slug": "liquid-fuels",
+      "levelOneLabel": "MACRO RESULTS",
+      "levelOneSlug": "macro-results"
+    },
+    {
+      "label": "Pipeline gas",
+      "slug": "pipeline-gas",
+      "levelOneLabel": "MACRO RESULTS",
+      "levelOneSlug": "macro-results"
+    },
+    {
+      "label": "Hydrogen",
+      "slug": "hydrogen",
+      "levelOneLabel": "MACRO RESULTS",
+      "levelOneSlug": "macro-results"
+    },
+    {
+      "label": "Industrial feedstocks",
+      "slug": "industrial-feedstocks",
+      "levelOneLabel": "MACRO RESULTS",
+      "levelOneSlug": "macro-results"
+    },
+    {
+      "label": "Overview",
+      "slug": "overview",
+      "levelOneLabel": "PILLAR 1: Efficiency/Electrification",
+      "levelOneSlug": "pillar-1-efficiencyelectrification"
+    },
+    {
+      "label": "Electricity demand",
+      "slug": "electricity-demand",
+      "levelOneLabel": "PILLAR 1: Efficiency/Electrification",
+      "levelOneSlug": "pillar-1-efficiencyelectrification"
+    },
+    {
+      "label": "Transportation ",
+      "slug": "transportation",
+      "levelOneLabel": "PILLAR 1: Efficiency/Electrification",
+      "levelOneSlug": "pillar-1-efficiencyelectrification"
+    },
+    {
+      "label": "Residential",
+      "slug": "residential",
+      "levelOneLabel": "PILLAR 1: Efficiency/Electrification",
+      "levelOneSlug": "pillar-1-efficiencyelectrification"
+    },
+    {
+      "label": "Commercial",
+      "slug": "commercial",
+      "levelOneLabel": "PILLAR 1: Efficiency/Electrification",
+      "levelOneSlug": "pillar-1-efficiencyelectrification"
+    },
+    {
+      "label": "Industrial",
+      "slug": "industrial",
+      "levelOneLabel": "PILLAR 1: Efficiency/Electrification",
+      "levelOneSlug": "pillar-1-efficiencyelectrification"
+    },
+    {
+      "label": "Generating capacity",
+      "slug": "generating-capacity",
+      "levelOneLabel": "PILLAR 2: Clean Electricity",
+      "levelOneSlug": "pillar-2-clean-electricity"
+    },
+    {
+      "label": "Generation",
+      "slug": "generation",
+      "levelOneLabel": "PILLAR 2: Clean Electricity",
+      "levelOneSlug": "pillar-2-clean-electricity"
+    },
+    {
+      "label": "Capacity factors",
+      "slug": "capacity-factors",
+      "levelOneLabel": "PILLAR 2: Clean Electricity",
+      "levelOneSlug": "pillar-2-clean-electricity"
+    },
+    {
+      "label": "Transmission",
+      "slug": "transmission",
+      "levelOneLabel": "PILLAR 2: Clean Electricity",
+      "levelOneSlug": "pillar-2-clean-electricity"
+    },
+    {
+      "label": "Land use",
+      "slug": "land-use",
+      "levelOneLabel": "PILLAR 2: Clean Electricity",
+      "levelOneSlug": "pillar-2-clean-electricity"
+    },
+    {
+      "label": "Solar and wind mfg capacity",
+      "slug": "solar-and-wind-mfg-capacity",
+      "levelOneLabel": "PILLAR 2: Clean Electricity",
+      "levelOneSlug": "pillar-2-clean-electricity"
+    },
+    {
+      "label": "Bioenergy",
+      "slug": "bioenergy",
+      "levelOneLabel": "PILLAR 3: Clean fuels",
+      "levelOneSlug": "pillar-3-clean-fuels"
+    },
+    {
+      "label": "Hydrogen",
+      "slug": "hydrogen",
+      "levelOneLabel": "PILLAR 3: Clean fuels",
+      "levelOneSlug": "pillar-3-clean-fuels"
+    },
+    {
+      "label": "CO2 capture",
+      "slug": "co2-capture",
+      "levelOneLabel": "PILLAR 4: CCUS",
+      "levelOneSlug": "pillar-4-ccus"
+    },
+    {
+      "label": "CO2 use",
+      "slug": "co2-use",
+      "levelOneLabel": "PILLAR 4: CCUS",
+      "levelOneSlug": "pillar-4-ccus"
+    },
+    {
+      "label": "CO2 pipelines",
+      "slug": "co2-pipelines",
+      "levelOneLabel": "PILLAR 4: CCUS",
+      "levelOneSlug": "pillar-4-ccus"
+    },
+    {
+      "label": "CO2 storage",
+      "slug": "co2-storage",
+      "levelOneLabel": "PILLAR 4: CCUS",
+      "levelOneSlug": "pillar-4-ccus"
+    },
+    {
+      "label": "Assumed non-CO2 emissions",
+      "slug": "assumed-non-co2-emissions",
+      "levelOneLabel": "PILLAR 5: Non-CO2 emissions",
+      "levelOneSlug": "pillar-5-non-co2-emissions"
+    },
+    {
+      "label": "Forests",
+      "slug": "forests",
+      "levelOneLabel": "PILLAR 6: Land sinks",
+      "levelOneSlug": "pillar-6-land-sinks"
+    },
+    {
+      "label": "Agriculture",
+      "slug": "agriculture",
+      "levelOneLabel": "PILLAR 6: Land sinks",
+      "levelOneSlug": "pillar-6-land-sinks"
+    },
+    {
+      "label": "Total assumed land sink",
+      "slug": "total-assumed-land-sink",
+      "levelOneLabel": "PILLAR 6: Land sinks",
+      "levelOneSlug": "pillar-6-land-sinks"
+    },
+    {
+      "label": "Jobs",
+      "slug": "jobs",
+      "levelOneLabel": "IMPACTS",
+      "levelOneSlug": "impacts"
+    },
+    {
+      "label": "Capital Investments",
+      "slug": "capital-investments",
+      "levelOneLabel": "IMPACTS",
+      "levelOneSlug": "impacts"
+    },
+    {
+      "label": "Fossil fuel industries",
+      "slug": "fossil-fuel-industries",
+      "levelOneLabel": "IMPACTS",
+      "levelOneSlug": "impacts"
+    },
+    {
+      "label": "Land use",
+      "slug": "land-use",
+      "levelOneLabel": "IMPACTS",
+      "levelOneSlug": "impacts"
+    },
+    {
+      "label": "Pipes & Wires",
+      "slug": "pipes-wires",
+      "levelOneLabel": "IMPACTS",
+      "levelOneSlug": "impacts"
+    },
+    {
+      "label": "Health",
+      "slug": "health",
+      "levelOneLabel": "IMPACTS",
+      "levelOneSlug": "impacts"
     }
   ]
 }
