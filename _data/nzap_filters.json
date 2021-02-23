@@ -331,10 +331,6 @@
       "slug": "pillar-2-clean-electricity",
       "levelTwoFilters": [
         {
-          "label": "Capacity factors",
-          "slug": "capacity-factors"
-        },
-        {
           "label": "Generating capacity",
           "slug": "generating-capacity"
         },
@@ -349,6 +345,10 @@
         {
           "label": "Transmission",
           "slug": "transmission"
+        },
+        {
+          "label": "Capacity factors",
+          "slug": "capacity-factors"
         },
         {
           "label": "Solar and wind mfg capacity",
@@ -383,12 +383,12 @@
           "slug": "jobs"
         },
         {
-          "label": "Fossil fuel industries",
-          "slug": "fossil-fuel-industries"
-        },
-        {
           "label": "Land use",
           "slug": "land-use"
+        },
+        {
+          "label": "Fossil fuel industries",
+          "slug": "fossil-fuel-industries"
         },
         {
           "label": "Pipes & Wires",
