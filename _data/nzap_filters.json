@@ -329,8 +329,8 @@
       "levelOneSlug": "macro-results"
     },
     {
-      "label": "Hydrogen",
-      "slug": "hydrogen",
+      "label": "Hydrogen (MACRO RESULTS)",
+      "slug": "macro-results_hydrogen",
       "levelOneLabel": "MACRO RESULTS",
       "levelOneSlug": "macro-results"
     },
@@ -401,8 +401,8 @@
       "levelOneSlug": "pillar-2-clean-electricity"
     },
     {
-      "label": "Land use",
-      "slug": "land-use",
+      "label": "Land use (PILLAR 2: Clean Electricity)",
+      "slug": "pillar-2-clean-electricity_land-use",
       "levelOneLabel": "PILLAR 2: Clean Electricity",
       "levelOneSlug": "pillar-2-clean-electricity"
     },
@@ -419,8 +419,8 @@
       "levelOneSlug": "pillar-3-clean-fuels"
     },
     {
-      "label": "Hydrogen",
-      "slug": "hydrogen",
+      "label": "Hydrogen (PILLAR 3: Clean fuels)",
+      "slug": "pillar-3-clean-fuels_hydrogen",
       "levelOneLabel": "PILLAR 3: Clean fuels",
       "levelOneSlug": "pillar-3-clean-fuels"
     },
@@ -491,8 +491,8 @@
       "levelOneSlug": "impacts"
     },
     {
-      "label": "Land use",
-      "slug": "land-use",
+      "label": "Land use (IMPACTS)",
+      "slug": "impacts_land-use",
       "levelOneLabel": "IMPACTS",
       "levelOneSlug": "impacts"
     },

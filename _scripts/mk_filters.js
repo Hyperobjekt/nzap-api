@@ -22,6 +22,17 @@ const slugify = str => {
   return slug(str)
 }
 
+const handleDuplicates = data => {
+  let duplicates = [];
+  let uniqueSubcategories = [];
+  [...data.levelTwoFilters].map(e => e.slug).forEach(e => !uniqueSubcategories.includes(e) ? uniqueSubcategories.push(e) : duplicates.push(e))
+  data.levelTwoFilters = data.levelTwoFilters.map(filter => {
+    if (duplicates.includes(filter.slug)) return { ...filter, label: `${filter.label} (${filter.levelOneLabel})`, slug: `${filter.levelOneSlug}_${filter.slug}` }
+    return { ...filter }
+  })
+  return data;
+}
+
 const assembleAndMapLevelTwoFilters = (output, data) => {
   let tracker = []
   let levelTwoFilters = []
@@ -36,7 +47,8 @@ const assembleAndMapLevelTwoFilters = (output, data) => {
     })
     output.levelTwoFilters = levelTwoFilters.map(e => { return { label: e.l2, slug: slugify(e.l2), levelOneLabel: e.l1, levelOneSlug: slugify(e.l1) } })
   }
-  return saveOutput(output);
+
+  return saveOutput(handleDuplicates(output));
 }
 
 const processData = dataString => {
