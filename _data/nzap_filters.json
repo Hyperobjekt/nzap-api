@@ -1,16 +1,120 @@
 {
   "usStates": [
     {
-      "label": "National",
-      "slug": "national"
+      "label": "Massachusetts",
+      "slug": "massachusetts"
     },
     {
-      "label": "Alabama",
-      "slug": "alabama"
+      "label": "Nevada",
+      "slug": "nevada"
+    },
+    {
+      "label": "Vermont",
+      "slug": "vermont"
+    },
+    {
+      "label": "Florida",
+      "slug": "florida"
+    },
+    {
+      "label": "New Hampshire",
+      "slug": "new-hampshire"
+    },
+    {
+      "label": "Maine",
+      "slug": "maine"
+    },
+    {
+      "label": "Rhode Island",
+      "slug": "rhode-island"
+    },
+    {
+      "label": "Delaware",
+      "slug": "delaware"
+    },
+    {
+      "label": "Wyoming",
+      "slug": "wyoming"
+    },
+    {
+      "label": "Montana",
+      "slug": "montana"
+    },
+    {
+      "label": "District Of Columbia",
+      "slug": "district-of-columbia"
+    },
+    {
+      "label": "Michigan",
+      "slug": "michigan"
+    },
+    {
+      "label": "West Virginia",
+      "slug": "west-virginia"
     },
     {
       "label": "Arizona",
       "slug": "arizona"
+    },
+    {
+      "label": "North Dakota",
+      "slug": "north-dakota"
+    },
+    {
+      "label": "Idaho",
+      "slug": "idaho"
+    },
+    {
+      "label": "Oregon",
+      "slug": "oregon"
+    },
+    {
+      "label": "South Dakota",
+      "slug": "south-dakota"
+    },
+    {
+      "label": "Maryland",
+      "slug": "maryland"
+    },
+    {
+      "label": "New York",
+      "slug": "new-york"
+    },
+    {
+      "label": "New Mexico",
+      "slug": "new-mexico"
+    },
+    {
+      "label": "South Carolina",
+      "slug": "south-carolina"
+    },
+    {
+      "label": "Washington",
+      "slug": "washington"
+    },
+    {
+      "label": "New Jersey",
+      "slug": "new-jersey"
+    },
+    {
+      "label": "Nebraska",
+      "slug": "nebraska"
+    },
+    {
+      "label": "Virginia",
+      "slug": "virginia"
+    },
+    {
+      "label": "Connecticut",
+      "slug": "connecticut"
+    },
+    {
+      "label": "Wisconsin",
+      "slug": "wisconsin"
+    },
+    {
+      "label": "Alabama",
+      "slug": "alabama"
     },
     {
       "label": "Arkansas",
@@ -25,28 +129,8 @@
       "slug": "colorado"
     },
     {
-      "label": "Connecticut",
-      "slug": "connecticut"
-    },
-    {
-      "label": "Delaware",
-      "slug": "delaware"
-    },
-    {
-      "label": "District Of Columbia",
-      "slug": "district-of-columbia"
-    },
-    {
-      "label": "Florida",
-      "slug": "florida"
-    },
-    {
       "label": "Georgia",
       "slug": "georgia"
-    },
-    {
-      "label": "Idaho",
-      "slug": "idaho"
     },
     {
       "label": "Illinois",
@@ -73,22 +157,6 @@
       "slug": "louisiana"
     },
     {
-      "label": "Maine",
-      "slug": "maine"
-    },
-    {
-      "label": "Maryland",
-      "slug": "maryland"
-    },
-    {
-      "label": "Massachusetts",
-      "slug": "massachusetts"
-    },
-    {
-      "label": "Michigan",
-      "slug": "michigan"
-    },
-    {
       "label": "Minnesota",
       "slug": "minnesota"
     },
@@ -101,40 +169,8 @@
       "slug": "missouri"
     },
     {
-      "label": "Montana",
-      "slug": "montana"
-    },
-    {
-      "label": "Nebraska",
-      "slug": "nebraska"
-    },
-    {
-      "label": "Nevada",
-      "slug": "nevada"
-    },
-    {
-      "label": "New Hampshire",
-      "slug": "new-hampshire"
-    },
-    {
-      "label": "New Jersey",
-      "slug": "new-jersey"
-    },
-    {
-      "label": "New Mexico",
-      "slug": "new-mexico"
-    },
-    {
-      "label": "New York",
-      "slug": "new-york"
-    },
-    {
       "label": "North Carolina",
       "slug": "north-carolina"
-    },
-    {
-      "label": "North Dakota",
-      "slug": "north-dakota"
     },
     {
       "label": "Ohio",
@@ -145,24 +181,8 @@
       "slug": "oklahoma"
     },
     {
-      "label": "Oregon",
-      "slug": "oregon"
-    },
-    {
       "label": "Pennsylvania",
       "slug": "pennsylvania"
-    },
-    {
-      "label": "Rhode Island",
-      "slug": "rhode-island"
-    },
-    {
-      "label": "South Carolina",
-      "slug": "south-carolina"
-    },
-    {
-      "label": "South Dakota",
-      "slug": "south-dakota"
     },
     {
       "label": "Tennessee",
@@ -177,47 +197,11 @@
       "slug": "utah"
     },
     {
-      "label": "Vermont",
-      "slug": "vermont"
-    },
-    {
-      "label": "Virginia",
-      "slug": "virginia"
-    },
-    {
-      "label": "Washington",
-      "slug": "washington"
-    },
-    {
-      "label": "West Virginia",
-      "slug": "west-virginia"
-    },
-    {
-      "label": "Wisconsin",
-      "slug": "wisconsin"
-    },
-    {
-      "label": "Wyoming",
-      "slug": "wyoming"
+      "label": "National",
+      "slug": "national"
     }
   ],
   "years": [
-    {
-      "label": "2020",
-      "slug": "2020"
-    },
-    {
-      "label": "2025",
-      "slug": "2025"
-    },
-    {
-      "label": "2030",
-      "slug": "2030"
-    },
-    {
-      "label": "2035",
-      "slug": "2035"
-    },
     {
       "label": "2040",
       "slug": "2040"
@@ -227,37 +211,57 @@
       "slug": "2045"
     },
     {
+      "label": "2030",
+      "slug": "2030"
+    },
+    {
+      "label": "2020",
+      "slug": "2020"
+    },
+    {
+      "label": "2025",
+      "slug": "2025"
+    },
+    {
       "label": "2050",
       "slug": "2050"
+    },
+    {
+      "label": "2035",
+      "slug": "2035"
     }
   ],
   "scenarios": [
     {
-      "label": "REF",
-      "slug": "ref"
+      "label": "E+RE+",
+      "slug": "ere-positive"
     },
     {
       "label": "E+",
       "slug": "e-positive"
     },
     {
-      "label": "E-",
-      "slug": "e-negative"
-    },
-    {
       "label": "E+RE-",
       "slug": "ere-negative"
+    },
+    {
+      "label": "E-",
+      "slug": "e-negative"
     },
     {
       "label": "E-B+",
       "slug": "e-b-positive"
     },
     {
-      "label": "E+RE+",
-      "slug": "ere-positive"
+      "label": "REF",
+      "slug": "ref"
     }
   ],
   "levelOneFilters": [
+    {
+      "label": "NA",
+      "slug": ""
+    },
     {
       "label": "MACRO RESULTS",
       "slug": "macro-results"
@@ -292,6 +296,12 @@
     }
   ],
   "levelTwoFilters": [
+    {
+      "label": "NA",
+      "slug": "",
+      "levelOneLabel": "NA",
+      "levelOneSlug": ""
+    },
     {
       "label": "Primary energy",
       "slug": "primary-energy",
@@ -403,12 +413,6 @@
     {
       "label": "Land use (PILLAR 2: Clean Electricity)",
       "slug": "pillar-2-clean-electricity_land-use",
-      "levelOneLabel": "PILLAR 2: Clean Electricity",
-      "levelOneSlug": "pillar-2-clean-electricity"
-    },
-    {
-      "label": "Solar and wind mfg capacity",
-      "slug": "solar-and-wind-mfg-capacity",
       "levelOneLabel": "PILLAR 2: Clean Electricity",
       "levelOneSlug": "pillar-2-clean-electricity"
     },
