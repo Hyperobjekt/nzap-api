@@ -259,10 +259,6 @@
   ],
   "levelOneFilters": [
     {
-      "label": "NA",
-      "slug": ""
-    },
-    {
       "label": "MACRO RESULTS",
       "slug": "macro-results"
     },
@@ -296,12 +292,6 @@
     }
   ],
   "levelTwoFilters": [
-    {
-      "label": "NA",
-      "slug": "",
-      "levelOneLabel": "NA",
-      "levelOneSlug": ""
-    },
     {
       "label": "Primary energy",
       "slug": "primary-energy",
