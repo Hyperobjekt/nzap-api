@@ -7,6 +7,7 @@
     "start": "node .",
     "dev": "./start",
     "test": "mocha --timeout 10000 ./test/**/*.spec.js --exit",
+    "auth": "gcloud auth login",
     "deploy": "gcloud config set project net-zero-america && gcloud app deploy --quiet --verbosity=info",
     "data:mk_json": "node --max-old-space-size=8192 _scripts/mk_json _data/nzap_data.csv",
     "predata:mk_json": "rimraf ./_data/nzap_data.json ./_data/nzap_data.js ./_data/nzap_filters.json",
