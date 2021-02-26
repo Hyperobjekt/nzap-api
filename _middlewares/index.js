@@ -1,5 +1,6 @@
 module.exports = {
     count: require('./count'),
+    distinct: require('./distinct'),
     create: require('./create'),
     delete: require('./delete'),
     done: require('./done'),
