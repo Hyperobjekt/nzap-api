@@ -11,16 +11,6 @@ const slugify = str => {
   return slug(str)
 }
 
-const getOrder = (req, res, next) => {
-  let db = req.app.get('db');
-  let aggL1 = db.collection('scenarios').aggregate([
-    { $group: { _id: { filter_level_1: '$filter_level_1', _filter_level_1: '$_filter_level_1', alt_l1: '$alt_l1' } } }
-  ]).toArray();
-  aggL1.then(results => {
-    let l1Sorted = results.filter(e => e._id.filter_level_1 !== 'NA').sort((a, b) => a._id.alt_l1 < b._id.alt_l1 ? -1 : 1);
-    console.log(l1Sorted)
-  })
-}
 
 const capitalize = str => str.split(' ').map(e => e.charAt(0).toUpperCase() + e.slice(1)).join(' ');
 
@@ -30,7 +20,7 @@ const getUsStates = (req, res, next) => {
     { $group: { _id: { geo: '$geo', _geo: '$_geo' } } }
   ]).toArray();
   agg.then(results => {
-    res.locals.usStates = results.map(doc => ({ label: capitalize(doc._id.geo), slug: doc._id._geo }))
+    res.locals.usStates = results.filter(doc => doc._id.geo).map(doc => ({ label: capitalize(doc._id.geo), slug: doc._id._geo }))
     next();
   })
 }
@@ -40,7 +30,7 @@ const getYearsField = (req, res, next) => {
     { $group: { _id: { year: '$year', _year: '$_year' } } }
   ]).toArray();
   agg.then(results => {
-    res.locals.years = results.sort((a, b) => a._id._year < b._id._year ? -1 : 1).map(doc => ({ label: doc._id.year.replace(/\D/g, ''), slug: doc._id._year }))
+    res.locals.years = results.sort((a, b) => a._id._year < b._id._year ? -1 : 1).filter(doc => doc._id.year).map(doc => ({ label: doc._id.year.replace(/\D/g, ''), slug: doc._id._year }))
     next();
   })
 }
@@ -50,7 +40,7 @@ const getScenariosField = (req, res, next) => {
     { $group: { _id: { scenario: '$scenario', _scenario: '$_scenario' } } }
   ]).toArray();
   agg.then(results => {
-    res.locals.scenarios = results.map(doc => ({ label: doc._id.scenario, slug: doc._id._scenario }))
+    res.locals.scenarios = results.filter(doc => doc._id.scenario).map(doc => ({ label: doc._id.scenario, slug: doc._id._scenario }))
     next();
   })
 }
@@ -62,6 +52,7 @@ const getFilterLevelOneField = (req, res, next) => {
   agg.then(results => {
     res.locals.levelOneFilters = results
       .filter(e => e._id.filter_level_1 !== 'NA')
+      .filter(doc => doc._id.filter_level_1)
       .sort((a, b) => a._id.alt_l1 < b._id.alt_l1 ? -1 : 1)
       .map(doc => ({ label: doc._id.filter_level_1, slug: doc._id._filter_level_1 }))
     next();
@@ -76,6 +67,7 @@ const assembleFilterLevelTwo = async (req, res, next) => {
   agg.then(results => {
     res.locals.levelTwoFilters = results
       .filter(e => e._id.filter_level_2 !== 'NA')
+      .filter(doc => doc._id.filter_level_2)
       .sort((a, b) => a._id.alt_l2 < b._id.alt_l2 ? -1 : 1)
       .map(doc => ({
         label: doc._id.filter_level_2,
