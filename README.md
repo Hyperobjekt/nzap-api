@@ -73,7 +73,7 @@ chmod +x _prefill
  
 
 ``` bash
- npm run data:mk_json
+ npm run upload
  ```
 
  > This might take a while - go get a cup of ☕
