@@ -20,3 +20,4 @@ node_modules/
 _data/*.csv
 _data/*.js
 _data/*_data.json
+_data/nzap_data_batch*
