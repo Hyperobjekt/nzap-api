@@ -1,0 +1,5 @@
+#!/bin/bash
+
+node --max-old-space-size=8192 _scripts/mk_json _data/nzap_data_batch_0.csv
+node --max-old-space-size=8192 _scripts/mk_json _data/nzap_data_batch_1.csv
+node --max-old-space-size=8192 _scripts/mk_json _data/nzap_data_batch_2.csv

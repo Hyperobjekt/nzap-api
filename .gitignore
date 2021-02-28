@@ -31,6 +31,7 @@ _scripts/_prefill.*
 _data/*.csv
 _data/*.js
 _data/*_data.json
+_data/nzap_data_batch*
 
 # debug
 npm-debug.log*

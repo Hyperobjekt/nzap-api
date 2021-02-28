@@ -9,15 +9,13 @@
     "test": "mocha --timeout 10000 ./test/**/*.spec.js --exit",
     "auth": "gcloud auth login",
     "deploy": "gcloud config set project net-zero-america && gcloud app deploy --quiet --verbosity=info",
-    "data:mk_json": "node --max-old-space-size=8192 _scripts/mk_json _data/nzap_data.csv",
-    "predata:mk_json": "rimraf ./_data/nzap_data.json ./_data/nzap_data.js ./_data/nzap_filters.json",
-    "postdata:mk_json": "npm run data:mk_filters",
-    "data:mk_filters": "node _scripts/mk_filters _data/nzap_data.json",
-    "postdata:mk_filters": "npm run data:mk_loadable",
-    "data:mk_loadable": "node _scripts/mk_loadable",
-    "postdata:mk_loadable": "npm run db:clean",
+    "clear_dir": "rimraf ./_data/nzap_data_batch* ./_data/nzap_filters.json",
+    "upload": "npm run clear_dir && npm run split_csv && npm run mk_json && npm run mk_loadable && npm run db:clean && npm run db:prefill && npm run mk_filters",
+    "split_csv": "./_scripts/_split_csv",
+    "mk_json": "./_scripts/_mk_json",
+    "mk_filters": "./_scripts/_mk_filters",
+    "mk_loadable": "./_scripts/_mk_loadable",
     "db:clean": "./_scripts/_clean",
-    "postdb:clean": "npm run db:prefill",
     "db:prefill": "./_scripts/_prefill"
   },
   "repository": {
@@ -26,6 +24,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "json2csv": "^5.0.5",
@@ -36,6 +35,7 @@
     "pg": "^8.4.2",
     "pluralize": "^8.0.0",
     "q": "^1.5.1",
+    "request": "^2.88.2",
     "serve-favicon": "^2.5.0",
     "slug": "^4.0.1"
   },

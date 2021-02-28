@@ -33,4 +33,3 @@ const processData = data => {
 }
 
 fs.readFile(path, async (err, data) => (err) ? console.error(err) : processData(await neatCsv(data)))
-
