@@ -18,7 +18,7 @@ In the root of the project; do:
 
 ``` bash
 mongoDB="mongodb://localhost:27017/nzap?readPreference=primary&appname=MongoDB%20Compass&ssl=false";
-echo "MODE=DEVELOPMENT \nTZ=\"America/New_York\" \nAPI_VERSION=v1 \nMONGO_URL=\"$mongoDB\" \nnodemon server" > start
+echo "MODE=DEVELOPMENT \nTZ=\"America/New_York\" \nPORT=5000 \nAPI_VERSION=v1 \nMONGO_URL=\"$mongoDB\" \nnodemon server" > start
 ```
 
 Make executable
@@ -73,7 +73,7 @@ chmod +x _prefill
  
 
 ``` bash
- npm run data:mk_json
+ npm run upload
  ```
 
  > This might take a while - go get a cup of ☕

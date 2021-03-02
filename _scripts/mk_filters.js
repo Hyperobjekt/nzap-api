@@ -4,7 +4,7 @@ const request = require('request');
 const fs = require('fs')
 const options = {
   'method': 'GET',
-  'url': 'http://localhost:5000/v1/load_filters',
+  'url': 'https://net-zero-america.nn.r.appspot.com/v1/load_filters',
   'headers': {
   }
 };
