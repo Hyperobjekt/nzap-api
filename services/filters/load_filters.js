@@ -20,7 +20,10 @@ const getUsStates = (req, res, next) => {
     { $group: { _id: { geo: '$geo', _geo: '$_geo' } } }
   ]).toArray();
   agg.then(results => {
-    res.locals.usStates = results.filter(doc => doc._id.geo).map(doc => ({ label: capitalize(doc._id.geo), slug: doc._id._geo }))
+    let usStates = results.filter(doc => doc._id.geo).map(doc => ({ label: capitalize(doc._id.geo), slug: doc._id._geo }));
+    let lead = usStates.filter(doc => doc.slug === 'national');
+    let follow = usStates.filter(doc => doc.slug !== 'national').sort((a, b) => a.slug < b.slug ? -1 : 1)
+    res.locals.usStates = [...lead, ...follow];
     next();
   })
 }
