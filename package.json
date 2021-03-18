@@ -16,7 +16,9 @@
     "mk_filters": "./_scripts/_mk_filters",
     "mk_loadable": "./_scripts/_mk_loadable",
     "db:clean": "./_scripts/_clean",
-    "db:prefill": "./_scripts/_prefill"
+    "db:prefill": "./_scripts/_prefill",
+    "db:dev_clean": "./_scripts/_clean.local",
+    "db:dev_prefill": "./_scripts/_prefill.local"
   },
   "repository": {
     "type": "git",
